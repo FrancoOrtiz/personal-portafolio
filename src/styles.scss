@@ -1,0 +1,24 @@
+
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0px;
+}
+
+body {
+    // font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+// 4-5 colores
+// $green-base: #1FA33E;
+// $green-base: #06BF56;
+$green-base: #4EFFBB;
+$darkgreen: #038A61;

@@ -1,0 +1,39 @@
+@import '../../styles.scss';
+
+.in-title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 800;
+    margin-top: 80px;
+    letter-spacing: 2px;
+}
+
+.in-subtitle {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 12px;
+    letter-spacing: 2px;
+}
+
+.img-contain {
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+    background-color: $green-base;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+        position:absolute;
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+        margin: auto;
+        height: 100%;
+        width: 80%;
+    }
+}
