@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Introduction } from './components/introduction/Introduction';
 import { Navbar } from './components/navbar/Navbar';
 import './styles.scss';
+import {IntlProvider} from 'react-intl'
+import {es} from './lang/spanish.js'
+import {en} from './lang/english.js'
+
+const message = {
+    es, 
+    en,
+}
 
 export const Portafolio = () => {
-    return (
-        <div className="portafolio_contain">
-            <Navbar />
 
-            <Introduction />
-        </div>
+    const [idioma, setIdioma] = useState('es');
+
+    return (
+        <IntlProvider messages={message[idioma]} locale={idioma} defaultLocale="es">
+
+            <div className="portafolio_contain">
+                <Navbar setIdioma={setIdioma}/>
+
+                <Introduction />
+            </div>
+        </IntlProvider>
     )
 }

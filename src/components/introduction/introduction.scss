@@ -4,7 +4,7 @@
     text-align: center;
     font-size: 46px;
     font-weight: 800;
-    margin-top: 80px;
+    margin-top: 140px;
     letter-spacing: 2px;
 }
 
@@ -36,4 +36,8 @@
         height: 100%;
         width: 80%;
     }
+}
+
+.img-computer {
+    filter: invert(100%) sepia(18%) saturate(6733%) hue-rotate(70deg) brightness(102%) contrast(128%);
 }
