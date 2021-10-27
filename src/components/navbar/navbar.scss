@@ -105,7 +105,7 @@
     }
 }
 
-.btnlanguage {
+.btn-language {
     position: absolute;
     right: 10px;
     background-color:transparent;
@@ -116,18 +116,59 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.2s ease 0.2s;
 
     @include mobile {
-        right: 0;
-        right: 75px;
-        margin: auto;
+        display: none;
+    }
+}
+
+.btn-language:hover {
+    background-color: white;
+    color: $green-base;
+    transition: all 0.2s ease 0.1s;
+
+    .flecha-arriba {
+        filter: invert(76%) sepia(24%) saturate(950%) hue-rotate(100deg) brightness(109%) contrast(103%);
+        transform: rotate(360deg);
+        width: 12%;
+        margin-left: 10px;
+        transition: all 0.2s ease 0.2s;
+    }
+}
+
+.btn-language-focus {
+    background-color: white;
+    color: $green-base;
+    position: absolute;
+    right: 10px;
+    border: 2px solid white; 
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease 0.1s;
+
+    @include mobile {
+        display: none;
     }
 }
 
 .flecha-abajo {
+    filter: invert(76%) sepia(24%) saturate(950%) hue-rotate(100deg) brightness(109%) contrast(103%);
+    transform: rotate(360deg);
+    width: 12%;
+    margin-left: 10px;
+    transition: all 0.2s ease 0.1s;
+}
+
+.flecha-arriba {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(201deg) brightness(101%) contrast(101%);
     width: 12%;
     margin-left: 10px;
+    transform: rotate(180deg);
+    transition: all 0.2s ease 0.2s;
 }
 
 .lang-contain {
@@ -135,9 +176,10 @@
     background-color: $green-base;
     top: 120%;
     right: 10px;
-    width: 130px;
+    width: 110px;
     border-radius: 8px;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 25%);
 
     .lang-option {
         margin: auto;
@@ -151,7 +193,13 @@
     }
 
     @include mobile {
-        right: 75px;
+        display:none;
+    }
+}
+
+.lang-option:hover {
+    img{
+        width: 26%;
     }
 }
 
@@ -161,4 +209,47 @@
 
 .lang-option img {
     width: 25%;
+}
+
+.btn-contain {
+    display: none; 
+
+    @include mobile {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top:40px;
+        width: 120px;
+        justify-content: space-between;
+    }
+}
+
+.btn-mobile{
+
+    @include mobile {
+        outline: none;
+        cursor: pointer;
+        width: 48px;
+        height: 24px;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 3px 4px;
+        background-color: transparent;
+
+        .circle{
+            width: 45%;
+            height: 100%;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            background-color:white;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    }
 }

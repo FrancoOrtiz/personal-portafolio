@@ -1,0 +1,28 @@
+@import "../../media-queries";
+@import "../../styles.scss";
+
+.desc-box {
+    text-align: center;
+    background-color: $green-base;
+    padding-top: 120px;
+    padding-bottom: 230px;
+    color: white;
+    margin-top: -4px;
+}
+
+.desc-contain {
+    width: 50%;
+    margin: auto;
+}
+
+.desc-title {
+    font-weight: 600;
+    font-size:28px;
+}
+
+.description {
+    font-weight: 400;
+    margin-top:26px;
+    font-size:20px;
+    line-height: 28px;
+}

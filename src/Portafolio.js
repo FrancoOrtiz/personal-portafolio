@@ -5,6 +5,8 @@ import './styles.scss';
 import {IntlProvider} from 'react-intl'
 import {es} from './lang/spanish.js'
 import {en} from './lang/english.js'
+import { Description } from './components/description/Description';
+import { Technologies } from './components/technologies/Technologies';
 
 const message = {
     es, 
@@ -22,6 +24,10 @@ export const Portafolio = () => {
                 <Navbar setIdioma={setIdioma}/>
 
                 <Introduction />
+
+                <Description />
+
+                <Technologies />
             </div>
         </IntlProvider>
     )

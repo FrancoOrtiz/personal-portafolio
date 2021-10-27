@@ -3,5 +3,5 @@ export const es = {
     technologies: 'Tecnologías',
     optionSp: 'Español',
     optionEn: 'Inglés',
-    language: 'Lenguaje',
+    language: 'Idioma',
 }

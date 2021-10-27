@@ -8,9 +8,13 @@ export const Introduction = () => {
             <h1 className="in-title"><FormattedMessage id="title" /></h1>
             <p className="in-subtitle">Diseño y escribo codigo de aplicaciones web</p>
             <div className="img-contain">
-                <img src="./images/cro.jpg" alt="foto perfil"></img>
+                <img src="./images/introduction/cro.jpg" alt="foto perfil"></img>
             </div>
-            {/* <img className="img-computer" src="./images/computer.jpg" alt="foto computadoras"></img> */}
+            <div className="bottom">
+                <img className="img-computer manual" src="./images/introduction/manual.png" alt="foto computadoras"></img>
+                <img className="img-computer" src="./images/introduction/programing.png" alt="foto computadoras"></img>
+                <img className="img-computer" src="./images/introduction/development.png" alt="foto computadoras"></img>
+            </div>
         </section>
     )
 }
