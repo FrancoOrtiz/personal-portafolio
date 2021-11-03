@@ -5,12 +5,11 @@
     width: 80%;
     margin: auto;
     background-color:white;
-    border: 1px solid gray;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 25%);
     border-radius: 10px;
     text-align: center;
     margin-top: -140px;
     padding-top: 40px;
-    padding-bottom: 40px;
     padding-bottom: 40px;
 
     h1 {
@@ -59,16 +58,14 @@
     width: 150px;
     margin: auto;
 
-    img {
-        cursor:pointer;
-    }
-
     h2 {
         margin-top:6px;
     }
 
     img:hover {
-        filter: invert(76%) sepia(29%) saturate(802%) hue-rotate(102deg) brightness(106%) contrast(101%);
+        filter: invert(54%) sepia(91%) saturate(425%) hue-rotate(129deg) brightness(92%) contrast(97%);
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
     }
     @include mobile {
         margin-top: 50px;

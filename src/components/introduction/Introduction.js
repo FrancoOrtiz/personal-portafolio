@@ -4,11 +4,11 @@ import {FormattedMessage} from 'react-intl';
 
 export const Introduction = () => {
     return (
-        <section>
+        <section id="introduction">
             <h1 className="in-title"><FormattedMessage id="title" /></h1>
-            <p className="in-subtitle">Diseño y escribo codigo de aplicaciones web</p>
+            <p className="in-subtitle"><FormattedMessage id="subtitle" /></p>
             <div className="img-contain">
-                <img src="./images/introduction/cro.jpg" alt="foto perfil"></img>
+                <img src="./images/introduction/foto.jpg" alt="foto perfil"></img>
             </div>
             <div className="bottom">
                 <img className="img-computer manual" src="./images/introduction/manual.png" alt="foto computadoras"></img>

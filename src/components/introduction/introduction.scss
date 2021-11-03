@@ -36,14 +36,11 @@
     position: relative;
 
     img {
-        position:absolute;
-        left: -100%;
-        right: -100%;
-        top: -100%;
-        bottom: -100%;
+        object-fit: cover;
+        object-position: top;
         margin: auto;
         height: 100%;
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -57,6 +54,5 @@
 }
 
 .img-computer {
-    filter: invert(88%) sepia(11%) saturate(2271%) hue-rotate(87deg) brightness(106%) contrast(102%);
-    
+    filter: invert(54%) sepia(91%) saturate(425%) hue-rotate(129deg) brightness(92%) contrast(97%);filter: invert(54%) sepia(91%) saturate(425%) hue-rotate(129deg) brightness(92%) contrast(97%);
 }

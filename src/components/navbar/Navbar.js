@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.scss';
 import {FormattedMessage} from 'react-intl';
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export const Navbar = ({setIdioma}) => {
 
@@ -16,11 +18,11 @@ export const Navbar = ({setIdioma}) => {
         }
     }, [setIdioma, lnMobile])
 
-    const handleOnClick = ( ) => {
+    const handleOnClick = () => {
         setIsOpen(!isOpen);
     }
 
-    const languageOnClick = ( ) => {
+    const languageOnClick = () => {
         setLnOpen(!lnOpen);
     }
 
@@ -31,12 +33,12 @@ export const Navbar = ({setIdioma}) => {
     return (
         <header className="header-nav">
             <nav className="navbar_contain">
-                <h1 className="author">Franco Ortiz</h1>
+                <h1 id="#introduction" className="author">Franco Ortiz</h1>
                 <div className={`${isOpen ? "open-menu" : "desktop-menu"}`}>
-                    <a href="#technologies"><FormattedMessage id="technologies"/></a>
-                    <a href="#description">Descripción</a>
-                    <a href="#projects">Proyectos</a>
-                    <a href="/">Contacto</a>
+                    <Link className="link" smooth={true} to="description"><FormattedMessage id="description" /></Link>
+                    <Link className="link" offset={-100} smooth={true} to="technologies"><FormattedMessage id="technologies"/></Link>
+                    <Link className="link" smooth={true} to="projects"><FormattedMessage id="projects" /></Link>
+                    <Link className="link" smooth={true} to="contact"><FormattedMessage id="contact" /></Link>
                     <div className="btn-contain">
                         <img src="./images/navbar/spain.png" alt="bandera de españa" />
                         <button onClick={changeLanguage} className="btn-mobile"><div className={`circle ${lnMobile ? "right" : "left"}`}></div></button>

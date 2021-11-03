@@ -1,10 +1,11 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl';
 import './technologies.scss';
 
 export const Technologies = () => {
     return (
         <section id="technologies" className="section-tech">
-            <h1>Technologies</h1>
+            <h1 ><FormattedMessage id="technologies" /></h1>
             <div className="tech-contain">
                 <div className="first-row">
                     <article className="tech-box">

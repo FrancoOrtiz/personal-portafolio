@@ -1,7 +1,21 @@
 export const es = {
     title: 'Diseñador, desarrollador Front-end',
-    technologies: 'Tecnologías',
+    subtitle: 'Diseño y escribo código de aplicaciones web.',
     optionSp: 'Español',
     optionEn: 'Inglés',
     language: 'Idioma',
+    technologies: 'Tecnologías',
+    description: 'Descripción',
+    projects: 'Proyectos',
+    contact: 'Contacto',
+    descTitle: 'Hola, soy Franco. Un gusto conocerte.',
+    descSubtitle: 'Tengo 20 años, soy de Buenos Aires, Argentina. Termine mis estudios de Técnico Informático Personal y Profesional en el año 2019. Con ese conocimiento decidí orientarme al desarrollo web, en el cual logré ampliar y mejorar mucho mis conocimientos y capacidades.',
+    pjTitle: 'Mis proyectos recientes',
+    pjSubtitle: 'Estos son algunos de mis proyectos recientes. Quieres ver más?',
+    sendEmail: 'Enviar Email.',
+    cTitle: 'Contáctame',
+    cSubtitle: 'Preséntame tu propuesta.',
+    name: 'Nombre',
+    message: 'Mensaje',
+    send: 'Enviar'
 }

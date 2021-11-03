@@ -7,6 +7,9 @@ import {es} from './lang/spanish.js'
 import {en} from './lang/english.js'
 import { Description } from './components/description/Description';
 import { Technologies } from './components/technologies/Technologies';
+import { Projects } from './components/projects/Projects';
+import { Contact } from './components/contact/Contact';
+import { Footer } from './components/footer/Footer';
 
 const message = {
     es, 
@@ -28,6 +31,12 @@ export const Portafolio = () => {
                 <Description />
 
                 <Technologies />
+
+                <Projects />
+
+                <Contact />
+
+                <Footer />
             </div>
         </IntlProvider>
     )
