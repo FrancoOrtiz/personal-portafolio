@@ -1,4 +1,3 @@
-
 export const en = {
     title: 'Designer, Front-end Developer',
     subtitle: 'Design and code web applications.',
@@ -18,5 +17,13 @@ export const en = {
     cSubtitle: 'Propose me something.',
     name: 'Name',
     message: 'Message',
-    send: 'Submit'
+    send: 'Submit',
+    btnGit: "See More on Github",
+    easybank: 'Bank Single-page Application make with Html, Css and Js.',
+    socialMedia: 'Design of social-medias stats with dark theme.',
+    urlShortly: 'Shortly links with a nice and easy design.',
+    todoApp: 'Manageable tasks list with theme changes.',
+    countriesApi: 'Allows countries search with React and ReactRoutes.',
+    calculator: 'Calculator with different sophisticated designs. Pug, Sass y Js.',
+    repository: 'Visit Repository'
 }

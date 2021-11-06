@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.scss';
 import {FormattedMessage} from 'react-intl';
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
+import { Link,} from 'react-scroll'
 export const Navbar = ({setIdioma}) => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const [lnOpen, setLnOpen] = useState(false);
     const [lnMobile, setLnMobile] = useState(false);
     
     useEffect(() => {
@@ -22,12 +19,12 @@ export const Navbar = ({setIdioma}) => {
         setIsOpen(!isOpen);
     }
 
-    const languageOnClick = () => {
-        setLnOpen(!lnOpen);
-    }
-
     const changeLanguage = () => {
         setLnMobile(!lnMobile);
+    }
+
+    const handleLink = () => {
+        setTimeout(setIsOpen, 500, false);
     }
 
     return (
@@ -35,26 +32,22 @@ export const Navbar = ({setIdioma}) => {
             <nav className="navbar_contain">
                 <h1 id="#introduction" className="author">Franco Ortiz</h1>
                 <div className={`${isOpen ? "open-menu" : "desktop-menu"}`}>
-                    <Link className="link" smooth={true} to="description"><FormattedMessage id="description" /></Link>
-                    <Link className="link" offset={-100} smooth={true} to="technologies"><FormattedMessage id="technologies"/></Link>
-                    <Link className="link" smooth={true} to="projects"><FormattedMessage id="projects" /></Link>
-                    <Link className="link" smooth={true} to="contact"><FormattedMessage id="contact" /></Link>
-                    <div className="btn-contain">
-                        <img src="./images/navbar/spain.png" alt="bandera de españa" />
-                        <button onClick={changeLanguage} className="btn-mobile"><div className={`circle ${lnMobile ? "right" : "left"}`}></div></button>
-                        <img src="./images/navbar/united-states.png" alt="bandera de estados unidos" />
-                    </div>
+                    <Link onClick={handleLink} className="link" smooth={true} to="description"><FormattedMessage id="description" /></Link>
+                    <Link onClick={handleLink} className="link" offset={-100} smooth={true} to="technologies"><FormattedMessage id="technologies"/></Link>
+                    <Link onClick={handleLink} className="link" smooth={true} to="projects"><FormattedMessage id="projects" /></Link>
+                    <Link onClick={handleLink} className="link" smooth={true} to="contact"><FormattedMessage id="contact" /></Link>
+                    <button onClick={changeLanguage} className={`btn-mobile ${lnMobile ? "united-states" : "spain"}`}><div className={`circle ${lnMobile ? "left" : "right"}`}></div></button>
                 </div>
                 <button 
-                    className="btn-nav"
+                    className={`hamburger hamburger--elastic ${isOpen && "is-active"}`} 
+                    type="button"
                     onClick={handleOnClick}
-                ><img className="menu-mobile" src="./images/navbar/menus.png" alt="menu"></img></button>
-                <button onClick={languageOnClick} className={`${lnOpen ? "btn-language-focus" : "btn-language"}`}><FormattedMessage id="language" /><img className={`${lnOpen ? "flecha-abajo" : "flecha-arriba"}`} src="./images/navbar/flecha-abajo.png" alt="flecha abajo"></img></button>
-                { lnOpen &&
-                <div className="lang-contain">
-                    <p onClick={()=>setLnMobile(false)} className="lang-option es"><FormattedMessage id="optionSp" /> <img src="./images/navbar/spain.png" alt="bandera de españa"></img></p>
-                    <p onClick={()=>setLnMobile(true)} className="lang-option"><FormattedMessage id="optionEn" /> <img src="./images/navbar/united-states.png" alt="bandera de estados unidos"></img></p>
-                </div>}
+                >
+                    <span className="hamburger-box">
+                        <span className="hamburger-inner"></span>
+                    </span>
+                </button>
+                <button onClick={changeLanguage} className={`btn-desktop ${lnMobile ? "united-states" : "spain"}`}><div className={`circle ${lnMobile ? "left" : "right"}`}></div></button>
             </nav>
         </header>
     )
