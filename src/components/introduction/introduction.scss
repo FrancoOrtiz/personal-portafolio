@@ -48,11 +48,12 @@
     display:flex;
     width: 100%;
     margin: auto;
-    align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    align-items: baseline;
+    margin-top: 120px;
+    // background-color: red;
 }
 
 .img-computer {
-    filter: invert(54%) sepia(91%) saturate(425%) hue-rotate(129deg) brightness(92%) contrast(97%);filter: invert(54%) sepia(91%) saturate(425%) hue-rotate(129deg) brightness(92%) contrast(97%);
+    filter: invert(54%) sepia(91%) saturate(425%) hue-rotate(129deg) brightness(92%) contrast(97%);
 }

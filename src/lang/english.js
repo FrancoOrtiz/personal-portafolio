@@ -25,5 +25,6 @@ export const en = {
     todoApp: 'Manageable tasks list with theme changes.',
     countriesApi: 'Allows countries search with React and ReactRoutes.',
     calculator: 'Calculator with different sophisticated designs. Pug, Sass y Js.',
-    repository: 'Visit Repository'
+    repository: 'Visit Repository',
+    error: 'COMPLETE FIELD CORRECTLY',
 }

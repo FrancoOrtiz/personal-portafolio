@@ -9,7 +9,7 @@ export const es = {
     projects: 'Proyectos',
     contact: 'Contacto',
     descTitle: 'Hola, soy Franco. Un gusto conocerte.',
-    descSubtitle: 'Tengo 20 años, soy de Buenos Aires, Argentina. Terminé mis estudios de Técnico Informático Personal y Profesional en el año 2019. Con ese conocimiento decidí orientarme al desarrollo web, en el cual logré ampliar y mejorar mucho mis conocimientos y capacidades.',
+    descSubtitle: 'Tengo 20 años, soy de Buenos Aires, Argentina. Terminé mis estudios de Técnico Informático Personal y Profesional en el año 2019. Con ese conocimiento decidí orientarme al desarrollo web, en el cual logré ampliar y mejorar mucho mis capacidades.',
     pjTitle: 'Mis proyectos recientes',
     pjSubtitle: 'Estos son algunos de mis proyectos recientes. Quieres ver más?',
     sendEmail: 'Enviar Email.',
@@ -20,10 +20,11 @@ export const es = {
     send: 'Enviar',
     btnGit: "Ver más en Github",
     easybank: 'Aplicación Single-Page de un banco hecha con Html,Css y Js.',
-    socialMedia: 'Diseño de estadisticas de redes sociales con tono oscuro.',
+    socialMedia: 'Diseño de estadísticas de redes sociales con tema oscuro.',
     urlShortly: 'Recortador de links con diseño agradable y fácil.',
     todoApp: 'Lista de tareas gestionable con cambio de tema.',
     countriesApi: 'Permite la búsqueda de países con React and ReactRoutes.',
-    calculator: 'Calculadora con distintos sofisticados diseños, hecha con Pug, Sass y Js.',
-    repository: 'Visitar Repositorio'
+    calculator: 'Calculadora con distintos sofisticados diseños. Realizada con Pug, Sass y Js.',
+    repository: 'Visitar Repositorio',
+    error: 'COMPLETE EL CAMPO CORRECTAMENTE'
 }

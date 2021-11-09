@@ -8,7 +8,7 @@ export const Contact = () => {
         <>
             <section id="contact" className="section-contact">
                 <h2><FormattedMessage id="cTitle" /></h2>
-                <p><FormattedMessage id="cSubtitle" /></p>
+                <p className="cSubtitle"><FormattedMessage id="cSubtitle" /></p>
                 <Form />
             </section>
         </>

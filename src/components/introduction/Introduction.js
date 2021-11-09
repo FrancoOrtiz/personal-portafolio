@@ -11,9 +11,9 @@ export const Introduction = () => {
                 <img src="./images/introduction/foto.jpg" alt="foto perfil"></img>
             </div>
             <div className="bottom">
-                <img className="img-computer manual" src="./images/introduction/manual.png" alt="foto computadoras"></img>
-                <img className="img-computer" src="./images/introduction/programing.png" alt="foto computadoras"></img>
-                <img className="img-computer" src="./images/introduction/development.png" alt="foto computadoras"></img>
+                {/* <img className="img-computer manual" src="./images/introduction/manual.png" alt="foto computadoras"></img> */}
+                <img className="img-computer" src="./images/introduction/pc.png" alt="foto computadoras"></img>
+                {/* <img className="img-computer" src="./images/introduction/development.png" alt="foto computadoras"></img> */}
             </div>
         </section>
     )

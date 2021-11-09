@@ -35,17 +35,15 @@
     display: flex;
     position: absolute;
     background-color: $green-base;  
-    border-top: 2px solid white;
     width: 100%;
     top: 100%;
     left: 0px;
     flex-direction: column;
-    padding: 0px 0px 20px;
+    padding: 0px 0px 40px;
     z-index: 100;
     opacity: 1;
     transition: all 0.4s ease-in-out;
 
-    
     .link {
         display: block;
         text-decoration: none;
@@ -54,7 +52,7 @@
         font-size: 25px;
         font-weight: 600;
         padding: 10px 0px;
-        
+        cursor: pointer;
 
         &:hover {
             background-color:white;
@@ -95,13 +93,10 @@
     }
 }
 
-
-
 .desktop-menu {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    // background-color: red;
     display: flex;
     height: 100%;
     align-items: center;
@@ -161,6 +156,31 @@
         border: none;
         border-radius: 20px;
         padding: 0.5px 4px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 34px;
+            content: "";
+            height:3px;
+            width: 100%;
+            border-radius: 16px;
+            background-color: white;
+            pointer-events: none;
+        }
+
+        &::after{
+            position: absolute;
+            top: 42px;
+            left: calc(50% - 11px);
+            content: "";
+            height:3px;
+            width: 50%;
+            border-radius: 16px;
+            background-color: white;
+            pointer-events: none;
+        }
         
         .circle{
             width: 58%;
@@ -245,5 +265,4 @@
         outline: none;
         
     }
-
 }

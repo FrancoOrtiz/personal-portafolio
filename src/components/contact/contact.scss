@@ -20,29 +20,10 @@
         margin-top: 60px;
     }
 
-    p {
+    .cSubtitle {
         margin-top: 14px;
         font-size: 22px;
         text-align: center;
-    }
-}
-
-.logo-contact {
-    display: block;
-    height: 140px;
-    width: 140px;
-    border-radius:50%;
-    border: 6px solid black;
-    margin: auto;
-    margin-top: -140px; 
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    padding-top: 36px;
-
-    img {
-        max-height: 100%;
-        max-width: 100%;
     }
 }
 
@@ -76,6 +57,15 @@
         padding:0px 10px;
     }
 
+    .fill-invalid {
+        border: 3px solid red;
+        
+        &::placeholder {
+            color: red;
+            font-weight: 600;
+        }
+    }
+
     .name {
         width: 100%;
     }
@@ -93,11 +83,9 @@
             padding: 0px;
         }
     }
-    
 }
 
 label {
-    margin-bottom:10px;
     font-size: 18px;
 }
 
@@ -106,6 +94,17 @@ textarea {
     border: none;
     padding: 10px;
     border-radius: 8px;
+    // transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+}
+
+.fill-invalid {
+    border: 3px solid red;
+    
+    &::placeholder {
+        color: red;
+        font-weight: 600;
+    }
 }
 
 .send-btn {
@@ -124,6 +123,27 @@ textarea {
     &:hover {
         background-color: white;
         color: $green-base;
-        transition: all 0.1s ease 0.1s;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.input-title {
+    display: flex;
+    align-items: center;
+    
+
+    .error {
+        color: red;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 18px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+
+        &.error-active {
+            opacity: 1;
+            transition: all 0.4s ease-in-out;
+        }
+
     }
 }
