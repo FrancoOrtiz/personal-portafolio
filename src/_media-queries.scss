@@ -1,4 +1,4 @@
-$breakpoint: 900px;
+$breakpoint: 980px;
 
 @mixin max-width($width) {
     @media only screen and (max-width: $width) {

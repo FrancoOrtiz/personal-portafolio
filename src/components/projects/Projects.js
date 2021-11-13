@@ -15,7 +15,7 @@ export const Projects = () => {
                             <h3><FormattedMessage id="easybank" /></h3>
                             <a className="btn-repository" href="https://github.com/FrancoOrtiz/easybank">
                                 <span><FormattedMessage id="repository" /></span>
-                                <span className="next"><img src="./images/projects/r-arrow.png" alt="next"/></span>
+                                <span className="next"><img src="./images/projects/r-arrow.svg" alt="next"/></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -25,7 +25,7 @@ export const Projects = () => {
                             <h3><FormattedMessage id="socialMedia" /></h3>
                             <a className="btn-repository" href="https://github.com/FrancoOrtiz/socialmedia-black-theme">
                                 <span><FormattedMessage id="repository" /></span>
-                                <span className="next"><img src="./images/projects/r-arrow.png" alt="next"/></span>
+                                <span className="next"><img src="./images/projects/r-arrow.svg" alt="next"/></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -35,7 +35,7 @@ export const Projects = () => {
                             <h3><FormattedMessage id="urlShortly" /></h3>
                             <a className="btn-repository" href="https://github.com/FrancoOrtiz/url-shortly">
                                 <span><FormattedMessage id="repository" /></span>
-                                <span className="next"><img src="./images/projects/r-arrow.png" alt="next"/></span>
+                                <span className="next"><img src="./images/projects/r-arrow.svg" alt="next"/></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -47,7 +47,7 @@ export const Projects = () => {
                             <h3><FormattedMessage id="todoApp" /></h3>
                             <a className="btn-repository" href="https://github.com/FrancoOrtiz/todo-app">
                                 <span><FormattedMessage id="repository" /></span>
-                                <span className="next"><img src="./images/projects/r-arrow.png" alt="next"/></span>
+                                <span className="next"><img src="./images/projects/r-arrow.svg" alt="next"/></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -57,7 +57,7 @@ export const Projects = () => {
                             <h3><FormattedMessage id="countriesApi" /></h3>
                             <a className="btn-repository" href="https://github.com/FrancoOrtiz/rest-countries-api">
                                 <span><FormattedMessage id="repository" /></span>
-                                <span className="next"><img src="./images/projects/r-arrow.png" alt="next"/></span>
+                                <span className="next"><img src="./images/projects/r-arrow.svg" alt="next"/></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -67,7 +67,7 @@ export const Projects = () => {
                             <h3><FormattedMessage id="calculator" /></h3>
                             <a className="btn-repository" href="https://github.com/FrancoOrtiz/calculator-app">
                                 <span><FormattedMessage id="repository" /></span>
-                                <span className="next"><img src="./images/projects/r-arrow.png" alt="next"/></span>
+                                <span className="next"><img src="./images/projects/r-arrow.svg" alt="next"/></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -75,7 +75,7 @@ export const Projects = () => {
             </div>
             <div className="github-contain">
                 <a className="btn-github" href="https://github.com/FrancoOrtiz">
-                    <span className="icon"><img src="images/footer/github-footer.png" alt="github"></img></span>
+                    <span className="icon"><img src="./images/footer/github-footer.svg" alt="github"></img></span>
                     <span><FormattedMessage id="btnGit" /></span>
                 </a>
             </div>
