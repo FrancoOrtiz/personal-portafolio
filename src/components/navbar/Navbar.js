@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.scss';
 import {FormattedMessage} from 'react-intl';
-import { Link,} from 'react-scroll'
+import { Link } from 'react-scroll'
 export const Navbar = ({setIdioma}) => {
 
     const [isOpen, setIsOpen] = useState(false);
