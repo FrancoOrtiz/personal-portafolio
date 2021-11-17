@@ -36,7 +36,11 @@ export const Navbar = ({setIdioma}) => {
                     <Link onClick={handleLink} className="link" offset={-100} smooth={true} to="technologies"><FormattedMessage id="technologies"/></Link>
                     <Link onClick={handleLink} className="link" smooth={true} to="projects"><FormattedMessage id="projects" /></Link>
                     <Link onClick={handleLink} className="link" smooth={true} to="contact"><FormattedMessage id="contact" /></Link>
-                    <button onClick={changeLanguage} className={`btn-mobile ${lnMobile ? "united-states" : "spain"}`}><div className={`circle ${lnMobile ? "left" : "right"}`}></div></button>
+                    <div className="btn-contain">
+                        <span>EN</span>
+                        <button onClick={changeLanguage} className="btn-mobile"><div className={`circle ${lnMobile ? "left" : "right"}`}></div></button>
+                        <span>ES</span>
+                    </div>
                 </div>
                 <button 
                     className={`hamburger hamburger--elastic ${isOpen && "is-active"}`} 
@@ -47,7 +51,7 @@ export const Navbar = ({setIdioma}) => {
                         <span className="hamburger-inner"></span>
                     </span>
                 </button>
-                <button onClick={changeLanguage} className={`btn-desktop ${lnMobile ? "united-states" : "spain"}`}><div className={`circle ${lnMobile ? "left" : "right"}`}></div></button>
+                <button onClick={changeLanguage} className="btn-desktop"><div className={`circle ${lnMobile ? "left" : "right"}`}></div></button>
             </nav>
         </header>
     )

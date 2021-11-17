@@ -1,8 +1,6 @@
 export const en = {
     title: 'Designer, Front-end Developer',
     subtitle: 'Design and code web applications.',
-    optionSp: 'Spanish',
-    optionEn: 'English',
     language: 'Language',
     technologies: 'Technologies',
     description: 'Description',
